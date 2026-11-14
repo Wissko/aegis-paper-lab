@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.sqlite*
+*.db*
+runtime/
+*.log
+local.*.json
+coverage/
+agent/memory/
+agent/skills/aegis-learned/

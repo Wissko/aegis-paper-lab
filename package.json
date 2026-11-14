@@ -1,0 +1,17 @@
+{
+  "name": "openclaw-aegis-market-agent",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=24.15.0 <25"},
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "status": "node scripts/owner.mjs status",
+    "smoke": "node scripts/smoke.mjs",
+    "affect:demo": "node scripts/affect-demo.mjs"
+  },
+  "openclaw": {
+    "extensions": ["./src/plugin.mjs"],
+    "compat": {"pluginApi": ">=2026.8.2", "minGatewayVersion": "2026.8.2"}
+  }
+}

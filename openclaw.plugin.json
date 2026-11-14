@@ -1,0 +1,12 @@
+{
+  "id": "aegis-control",
+  "name": "Aegis — marchés et simulation",
+  "description": "Recherche financière, mémoire persistante, simulation EUR et limites exécutoires. Aucun ordre réel.",
+  "activation": {"onStartup": true},
+  "contracts": {"tools": ["aegis_portfolio", "aegis_market", "aegis_analysis", "aegis_memory", "aegis_skill_lab"]},
+  "toolMetadata": {
+    "aegis_portfolio": {"optional":true}, "aegis_market": {"optional":true},
+    "aegis_analysis": {"optional":true}, "aegis_memory": {"optional":true}, "aegis_skill_lab": {"optional":true}
+  },
+  "configSchema": {"type":"object","additionalProperties":false,"required":["stateDir","workspace"],"properties":{"stateDir":{"type":"string"},"workspace":{"type":"string"}}}
+}
